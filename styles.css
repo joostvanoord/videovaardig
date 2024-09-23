@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'brightonvintage';
+  src: url('01_Graphics/02_Fonts/Brightonvintage.ttf') format('truetype');
+  font-style: normal;
+}
+
+body {
+  background: radial-gradient(circle, #f8f4f1, #f5bff1); /* Radiale gradient achtergrond */
+  display: flex; /* Flexbox voor centreren */
+  justify-content: center; /* Horizontaal centreren */
+  align-items: center; /* Verticaal centreren */
+  height: 100vh; /* Volledige hoogte van het scherm */
+  margin: 0; /* Geen extra marge */
+}
+
+.container-body {
+  text-align: center; /* Centraal uitlijnen van de container */
+  transition: opacity 0.5s ease; /* Fade-effect bij verandering */
+}
+
+.container-body {
+  text-align: center; /* Centraal uitlijnen van de container */
+  margin-top: 80px; /* Pas deze waarde aan voor meer of minder ruimte boven logo */
+}
+
+.ondertitel {
+  font-family: 'brightonvintage', sans-serif; /* Specifiek font voor de ondertitel */
+  font-size: 3rem; /* Lettergrootte voor de ondertitel */
+}
+
+.simpel {
+  color: #f91086; /* Roze kleur voor "Simpel" */
+}
+
+.snel {
+  color: #37e0db; /* Blauwgroene kleur voor "Snel" */
+}
+
+.speels {
+  color: #fcb40a; /* Gele kleur voor "Speels" */
+}
+
+#logo {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.arrow {
+  display: inline-block; /* Zorg ervoor dat de afbeelding kan bewegen */
+  animation: bounce 0.6s infinite alternate; /* Bouncing animatie */
+  margin-top: 20px; /* Ruimte boven de pijl */
+}
+
+.arrow img {
+  width: 50px; /* Pas de grootte van de afbeelding aan */
+  height: auto; /* Houd de verhoudingen van de afbeelding */
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0); /* Beginpositie */
+  }
+  100% {
+    transform: translateY(10px); /* Eindpositie */
+  }
+}
